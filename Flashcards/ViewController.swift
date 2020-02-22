@@ -63,6 +63,8 @@ class ViewController: UIViewController {
             btnOptionOne.isHidden = false
             btnOptionTwo.isHidden = false
             btnOptionThree.isHidden = false
+        } else {
+            frontLabel.isHidden = true
         }
     }
    
