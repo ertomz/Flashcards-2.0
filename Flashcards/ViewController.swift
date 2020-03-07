@@ -18,7 +18,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnOptionTwo: UIButton!
     @IBOutlet weak var btnOptionThree: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -84,6 +83,26 @@ class ViewController: UIViewController {
     // If taps Button 3, hides the button
     @IBAction func didTapOptionThree(_ sender: Any) {
         btnOptionThree.isHidden = true
+    }
+    
+    
+    func updateFlashcard(question: String, answer: String, buttonOne: String, buttonTwo: String, buttonThree: String){
+       
+        // updates question and answer labels
+        frontLabel.text = question
+        backLabel.text = answer
+        
+        // updates buttons
+        btnOptionOne.setTitle(buttonOne, for: UIControl.State.normal)
+        btnOptionTwo.setTitle(buttonTwo, for: UIControl.State.normal)
+        btnOptionThree.setTitle(buttonThree, for: UIControl.State.normal)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let navigationController = segue.destination as! UINavigationController
+        let creationController = navigationController.topViewController as! CreationViewController
+        creationController.flashcardsController = self
     }
     
 }

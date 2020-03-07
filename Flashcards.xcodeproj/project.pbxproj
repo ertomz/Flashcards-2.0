@@ -13,6 +13,7 @@
 		A128197323EF6F2C00EADF74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A128197123EF6F2C00EADF74 /* Main.storyboard */; };
 		A128197523EF6F2F00EADF74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A128197423EF6F2F00EADF74 /* Assets.xcassets */; };
 		A128197823EF6F2F00EADF74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A128197623EF6F2F00EADF74 /* LaunchScreen.storyboard */; };
+		A1C1A48C241332410018E3EB /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1A48B241332410018E3EB /* CreationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A128197423EF6F2F00EADF74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A128197723EF6F2F00EADF74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A128197923EF6F2F00EADF74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C1A48B241332410018E3EB /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				A128196D23EF6F2C00EADF74 /* SceneDelegate.swift */,
 				A128196F23EF6F2C00EADF74 /* ViewController.swift */,
 				A128197123EF6F2C00EADF74 /* Main.storyboard */,
+				A1C1A48B241332410018E3EB /* CreationViewController.swift */,
 				A128197423EF6F2F00EADF74 /* Assets.xcassets */,
 				A128197623EF6F2F00EADF74 /* LaunchScreen.storyboard */,
 				A128197923EF6F2F00EADF74 /* Info.plist */,
@@ -141,6 +144,7 @@
 				A128197023EF6F2C00EADF74 /* ViewController.swift in Sources */,
 				A128196C23EF6F2C00EADF74 /* AppDelegate.swift in Sources */,
 				A128196E23EF6F2C00EADF74 /* SceneDelegate.swift in Sources */,
+				A1C1A48C241332410018E3EB /* CreationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

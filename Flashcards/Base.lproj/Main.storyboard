@@ -49,9 +49,10 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YO-Xy-PP4">
-                                <rect key="frame" x="65" y="487" width="284" height="56"/>
+                            <button tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YO-Xy-PP4">
+                                <rect key="frame" x="65" y="475" width="284" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Jan's Cands">
@@ -65,6 +66,7 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcD-xA-c7a">
                                 <rect key="frame" x="65" y="578" width="284" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Serenity by Jan">
@@ -77,6 +79,7 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1L-nn-9EK">
                                 <rect key="frame" x="65" y="675" width="284" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Firey Fragrance">
@@ -84,6 +87,15 @@
                                 </state>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="cpH-Tk-lsg" appends="YES" id="g3J-gm-hk2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkT-a1-meU">
+                                <rect key="frame" x="169" y="777" width="76" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <segue destination="JB6-Rb-qH7" kind="presentation" id="y1h-zw-Z4x"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -122,6 +134,104 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="113.04347826086958" y="119.86607142857142"/>
+        </scene>
+        <!--Creation View Controller-->
+        <scene sceneID="rkZ-XJ-KIf">
+            <objects>
+                <viewController id="tcI-p8-Ph6" customClass="CreationViewController" customModule="Flashcards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MpX-se-6pm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Option 1" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XFC-FD-kyy">
+                                <rect key="frame" x="49" y="404" width="316" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Option 2 (correct answer)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ofi-wV-tsA">
+                                <rect key="frame" x="49" y="480" width="316" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Option 3" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rkx-OZ-L79">
+                                <rect key="frame" x="49" y="559" width="316" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLe-ZT-0BJ">
+                                <rect key="frame" x="20" y="86" width="374" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Create New Flashcard">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="34"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Question" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G4X-ru-9gy">
+                                <rect key="frame" x="49" y="163" width="316" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ty4-T1-kMw">
+                                <rect key="frame" x="49" y="243" width="316" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="UDW-cy-Tqq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="S7j-H6-jZl">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="CTl-Ma-Y8K">
+                            <connections>
+                                <action selector="didTapOnCancel:" destination="tcI-p8-Ph6" id="1qP-eG-ynO"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="NK1-m7-ubu">
+                            <connections>
+                                <action selector="didTapOnDone:" destination="tcI-p8-Ph6" id="woe-NF-iam"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="answerTextField" destination="ty4-T1-kMw" id="HrN-hH-WNI"/>
+                        <outlet property="btnOptionOneTextField" destination="XFC-FD-kyy" id="cRI-xe-3m8"/>
+                        <outlet property="btnOptionThreeTextField" destination="rkx-OZ-L79" id="Xka-rN-khO"/>
+                        <outlet property="btnOptionTwoTextField" destination="ofi-wV-tsA" id="z0X-91-hME"/>
+                        <outlet property="questionTextField" destination="G4X-ru-9gy" id="elG-bT-hcr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uAM-Jv-f9A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1826.0869565217392" y="119.86607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Sfa-Zr-3FE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JB6-Rb-qH7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vqM-rZ-oT1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tcI-p8-Ph6" kind="relationship" relationship="rootViewController" id="Kv2-8Z-ZpE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j5O-LT-ElO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915.94202898550736" y="119.86607142857142"/>
         </scene>
     </scenes>
 </document>
